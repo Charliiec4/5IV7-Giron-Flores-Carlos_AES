@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Descifrar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="imagenFondo">
+        <img src="./fondo.jpg" alt="">
+    </div>
+        <div class="main">
+        
+        <form method="POST" action="descifrar" enctype="multipart/form-data">
+            <table>
+            <tr>
+            <td>Seleccione Archivo</td><td><input type="file" name="file"/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" name="key" id="llave" placeholder="escribe Contraseña" minlength="16" maxlength="32" ></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Descifrar" /></td>
+            </tr>
+            </table>
+            <a href="index.html" class="link">Principal</a>
+        </form>
+        </div>>
+    </body>
+</html>

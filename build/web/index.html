@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Descifrado AES</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+            <div class="imagenFondo">
+        <img src="./fondo.jpg" alt="">
+    </div>
+       
+        <form action="cifrar" method="POST">
+            <textarea id="cadena" name="texto" cols="50" rows="10" maxlength="100" class="texto" placeholder="Escrcibe el texto a cifrar"></textarea>
+            <br>
+            <p style="text-align: center">128 bits</p>
+            <input type="radio" name ="tamano" value="128" checked>
+             <p style="text-align: center">192 bits</p>
+            <input type="radio" name ="tamano" value="192">
+             <p style="text-align: center">256 bits</p>
+            <input type="radio" name ="tamano" value="256">
+          
+            <input type="text" id="key" name="key" maxlength="32" minlength="16" placeholder="escribe la lalve para cifrar">
+           
+            <input type="submit">
+           
+            <a href="descifrar.html" class="link">Descifrar Archivo</a>
+        
+        </form>
+    </body>
+</html>
